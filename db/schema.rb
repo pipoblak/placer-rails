@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_132134) do
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
 
-  create_table "admins", force: :cascade do |t|
+  create_table "admins", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_132134) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
     t.string "encrypted_password", default: "", null: false
