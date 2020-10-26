@@ -51,12 +51,12 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "ially_back_production"
+  # config.active_job.queue_name_prefix = "placer_rails_back_production"
 
   config.action_mailer.perform_caching = false
   
   #SMTP MOCK CONFIG
-  config.action_mailer.default_url_options = { host: 'ially.com.br' }
+  config.action_mailer.default_url_options = { host: 'placer_rails.com.br' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => '3de70da7c7dbd9',
@@ -66,7 +66,7 @@ Rails.application.configure do
     :port => '2525',
     :authentication => :cram_md5
   }
-  config.action_mailer.default_options = { from: 'noreply@ially.com.br' }
+  config.action_mailer.default_options = { from: 'noreply@placer_rails.com.br' }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

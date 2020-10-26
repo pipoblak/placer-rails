@@ -43,7 +43,7 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
   
   #SMTP MOCK CONFIG
-  config.action_mailer.default_url_options = { host: 'ially.com.br' }
+  config.action_mailer.default_url_options = { host: 'placer_rails.com.br' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => '3de70da7c7dbd9',
@@ -53,7 +53,7 @@ Rails.application.configure do
     :port => '2525',
     :authentication => :cram_md5
   }
-  config.action_mailer.default_options = { from: 'noreply@ially.com.br' }
+  config.action_mailer.default_options = { from: 'noreply@placer_rails.com.br' }
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true

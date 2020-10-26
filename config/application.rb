@@ -16,7 +16,7 @@ require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
 
-module IallyBack
+module PlacerRailsBack
   class Application < Rails::Application
     config.load_defaults 6.0
 

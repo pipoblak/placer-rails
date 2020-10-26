@@ -42,7 +42,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
   
   #SMTP MOCK CONFIG
-  config.action_mailer.default_url_options = { host: 'ially.com.br' }
+  config.action_mailer.default_url_options = { host: 'placer_rails.com.br' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => '3de70da7c7dbd9',
@@ -52,7 +52,7 @@ Rails.application.configure do
     :port => '2525',
     :authentication => :cram_md5
   }
-  config.action_mailer.default_options = { from: 'noreply@ially.com.br' }
+  config.action_mailer.default_options = { from: 'noreply@placer_rails.com.br' }
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
