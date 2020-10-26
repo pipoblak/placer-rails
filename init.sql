@@ -1,0 +1,2 @@
+CREATE USER pipoblak;
+ALTER USER pipoblak WITH SUPERUSER;
