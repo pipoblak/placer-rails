@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       namespace :backoffice do
         as :admin do
           resources :users
+          resources :brands
         end
       end
       namespace :dealers do
